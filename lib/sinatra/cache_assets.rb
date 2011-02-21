@@ -19,7 +19,7 @@ module Sinatra
   private
 
     def duration
-      options[:max_age] || 3600
+      options[:max_age] || 86400
     end
 
   end

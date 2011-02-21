@@ -7,7 +7,7 @@ This Rack middleware will add a Cache-Control header to your Sinatra static asse
     require "sinatra"
     require "sinatra/cache_assets"
 
-    use Sinatra::CacheAssets, :max_age => 7200  # seconds
+    use Sinatra::CacheAssets, :max_age => 7200  # seconds, defaults to 86400
 
     get "/" do
       "some data"
